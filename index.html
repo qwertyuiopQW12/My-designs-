@@ -122,9 +122,6 @@
     });
   </script>
 </head>
-
-<link rel="manifest" href="manifest.json">
-
 <body><div class="loader">
   <div></div>
 </div><header>
@@ -169,18 +166,3 @@
   </div>
 </footer></body>
 </html>
-<script>
-  
-  
-    if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js')
-      .then(function(reg) {
-        console.log('تم تسجيل Service Worker');
-      }).catch(function(error) {
-        console.log('فشل في التسجيل:', error);
-      });
-  }
-    
-  
-  
-</script>

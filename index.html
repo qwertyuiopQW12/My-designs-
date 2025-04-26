@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شركة فيوجن برو - تصميماتي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #f3f3f3;
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    .loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .loader div {
+      width: 30px;
+      height: 30px;
+      background: #2a5298;
+      animation: bounce 1s infinite alternate;
+      border-radius: 50%;
+    }
+    @keyframes bounce {
+      to {
+        transform: translateY(-50px);
+      }
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 30px 20px;
+      max-width: 1300px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeIn 1s ease-out forwards;
+      animation-delay: 1s;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .gallery img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .popup {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+    }
+    .popup img {
+      display: block;
+      margin: 50px auto;
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 20px;
+    }
+    .popup:target {
+      display: block;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 30px;
+      font-size: 1.3rem;
+    }
+    .social a {
+      color: #f8c701;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+    .social a:hover {
+      color: #ffdd00;
+    }
+  </style>
+  <script>
+    window.addEventListener("load", function() {
+      document.querySelector(".loader").style.display = "none";
+    });
+  </script>
+</head>
+
+<link rel="manifest" href="manifest.json">
+
+<body><div class="loader">
+  <div></div>
+</div><header>
+  مرحباً بكم في شركة فيوجن برو 
+</header><div class="gallery">
+  <a href="#img1"><img src="design01.jpg" alt="تصميم 1"></a>
+  <a href="#img2"><img src="design1.jpg" alt="تصميم 2"></a>
+  <a href="#img3"><img src="design2.jpg" alt="تصميم 3"></a>
+  <a href="#img4"><img src="design3.jpg" alt="تصميم 4"></a>
+  <a href="#img5"><img src="design165.jpg" alt="تصميم 5"></a>
+  <a href="#img6"><img src="design6.jpg" alt="تصميم 6"></a>
+  <a href="#img7"><img src="design4.jpg" alt="تصميم 7"></a>
+  <a href="#img8"><img src="design7.jpg" alt="تصميم 8"></a>
+  <a href="#img9"><img src="design8.jpg" alt="تصميم 9"></a>
+  <a href="#img10"><img src="design9.jpg" alt="تصميم 10"></a>
+  <a href="#img11"><img src="design10.jpg" alt="تصميم 11"></a>
+  <a href="#img12"><img src="design11.jpg" alt="تصميم 12"></a>
+  <a href="#img13"><img src="design12.jpg" alt="تصميم 13"></a>
+  <a href="#img14"><img src="design13.jpg" alt="تصميم 14"></a>
+  <a href="#img15"><img src="design14.jpg" alt="تصميم 15"></a>
+  <a href="#img16"><img src="design162.jpg" alt="تصميم 16"></a>
+</div><div id="img1" class="popup"><a href="#"><img src="design01.jpg"></a></div>
+<div id="img2" class="popup"><a href="#"><img src="design1.jpg"></a></div>
+<div id="img3" class="popup"><a href="#"><img src="design2.jpg"></a></div>
+<div id="img4" class="popup"><a href="#"><img src="design3.jpg"></a></div>
+<div id="img5" class="popup"><a href="#"><img src="design165.jpg"></a></div>
+<div id="img6" class="popup"><a href="#"><img src="design6.jpg"></a></div>
+<div id="img7" class="popup"><a href="#"><img src="design4.jpg"></a></div>
+<div id="img8" class="popup"><a href="#"><img src="design7.jpg"></a></div>
+<div id="img9" class="popup"><a href="#"><img src="design8.jpg"></a></div>
+<div id="img10" class="popup"><a href="#"><img src="design9.jpg"></a></div>
+<div id="img11" class="popup"><a href="#"><img src="design10.jpg"></a></div>
+<div id="img12" class="popup"><a href="#"><img src="design11.jpg"></a></div>
+<div id="img13" class="popup"><a href="#"><img src="design12.jpg"></a></div>
+<div id="img14" class="popup"><a href="#"><img src="design13.jpg"></a></div>
+<div id="img15" class="popup"><a href="#"><img src="design14.jpg"></a></div>
+<div id="img16" class="popup"><a href="#"><img src="design162.jpg"></a></div><footer>
+  للتواصل معنا:<br>
+  <div class="social">
+    <a href="https://wa.me/967737311305">واتساب</a> |
+    <a href="https://t.me/FusionPro1">تيليجرام</a>
+  </div>
+</footer></body>
+</html>
+<script>
+  
+  
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg) {
+        console.log('تم تسجيل Service Worker');
+      }).catch(function(error) {
+        console.log('فشل في التسجيل:', error);
+      });
+  }
+    
+  
+  
+</script>
